@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		03964EE22787E60F00B8F484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03964EE12787E60F00B8F484 /* AppDelegate.swift */; };
 		03964EE42787E60F00B8F484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03964EE32787E60F00B8F484 /* SceneDelegate.swift */; };
-		03964EE62787E60F00B8F484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03964EE52787E60F00B8F484 /* ViewController.swift */; };
-		03964EE92787E60F00B8F484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03964EE72787E60F00B8F484 /* Main.storyboard */; };
 		03964EEB2787E61100B8F484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03964EEA2787E61100B8F484 /* Assets.xcassets */; };
 		03964EEE2787E61100B8F484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03964EEC2787E61100B8F484 /* LaunchScreen.storyboard */; };
+		03F74E1A2787E9DD003372DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F74E182787E9DD003372DE /* HomeViewController.swift */; };
+		03F74E1B2787E9DD003372DE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F74E192787E9DD003372DE /* HomeViewController.xib */; };
+		03F74E1E2787F695003372DE /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F74E1D2787F695003372DE /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03964EDE2787E60F00B8F484 /* Samsung-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Samsung-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03964EE12787E60F00B8F484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03964EE32787E60F00B8F484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03964EE52787E60F00B8F484 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03964EE82787E60F00B8F484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03964EEA2787E61100B8F484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03964EED2787E61100B8F484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03964EEF2787E61100B8F484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F74E182787E9DD003372DE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		03F74E192787E9DD003372DE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		03F74E1D2787F695003372DE /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		03964EE02787E60F00B8F484 /* Samsung-Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				03964EE12787E60F00B8F484 /* AppDelegate.swift */,
-				03964EE32787E60F00B8F484 /* SceneDelegate.swift */,
-				03964EE52787E60F00B8F484 /* ViewController.swift */,
-				03964EE72787E60F00B8F484 /* Main.storyboard */,
-				03964EEA2787E61100B8F484 /* Assets.xcassets */,
-				03964EEC2787E61100B8F484 /* LaunchScreen.storyboard */,
 				03964EEF2787E61100B8F484 /* Info.plist */,
+				03964EEA2787E61100B8F484 /* Assets.xcassets */,
+				03964EF52787E68100B8F484 /* Launch */,
+				03964EF62787E6C000B8F484 /* Home */,
+				03F74E1C2787F654003372DE /* Utilities */,
 			);
 			path = "Samsung-Calculator";
+			sourceTree = "<group>";
+		};
+		03964EF52787E68100B8F484 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				03964EE32787E60F00B8F484 /* SceneDelegate.swift */,
+				03964EE12787E60F00B8F484 /* AppDelegate.swift */,
+				03964EEC2787E61100B8F484 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		03964EF62787E6C000B8F484 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				03F74E182787E9DD003372DE /* HomeViewController.swift */,
+				03F74E192787E9DD003372DE /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		03F74E1C2787F654003372DE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				03F74E1D2787F695003372DE /* UIButtonExtension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +153,7 @@
 			files = (
 				03964EEE2787E61100B8F484 /* LaunchScreen.storyboard in Resources */,
 				03964EEB2787E61100B8F484 /* Assets.xcassets in Resources */,
-				03964EE92787E60F00B8F484 /* Main.storyboard in Resources */,
+				03F74E1B2787E9DD003372DE /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +164,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03964EE62787E60F00B8F484 /* ViewController.swift in Sources */,
 				03964EE22787E60F00B8F484 /* AppDelegate.swift in Sources */,
+				03F74E1E2787F695003372DE /* UIButtonExtension.swift in Sources */,
 				03964EE42787E60F00B8F484 /* SceneDelegate.swift in Sources */,
+				03F74E1A2787E9DD003372DE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03964EE72787E60F00B8F484 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03964EE82787E60F00B8F484 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03964EEC2787E61100B8F484 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
