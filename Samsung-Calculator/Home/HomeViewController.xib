@@ -232,7 +232,7 @@
                                         <action selector="numberAction:" destination="-1" eventType="touchUpInside" id="kFd-Zp-Xmz"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73W-1b-ch6">
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73W-1b-ch6">
                                     <rect key="frame" x="0.0" y="194.5" width="82.5" height="82"/>
                                     <color key="backgroundColor" name="buttonGenBackgroundColorSet"/>
                                     <constraints>
