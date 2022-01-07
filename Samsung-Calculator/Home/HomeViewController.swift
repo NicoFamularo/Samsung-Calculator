@@ -126,7 +126,12 @@ class HomeViewController: UIViewController {
 //  MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
+    
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         number0.round()
         number1.round()
         number2.round()
@@ -137,7 +142,6 @@ class HomeViewController: UIViewController {
         number7.round()
         number8.round()
         number9.round()
-        
         numberDec.round()
         numberMinPlus.round()
         
@@ -151,6 +155,7 @@ class HomeViewController: UIViewController {
         operatorMultiplication.round()
         
         numberDec.setTitle(kDecimalSeparator, for: .normal)
-    
+        
     }
+    
 }
