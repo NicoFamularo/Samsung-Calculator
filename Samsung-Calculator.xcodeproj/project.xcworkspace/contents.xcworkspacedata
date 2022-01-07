@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../HomeViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../HomeViewController.xib">
+   </FileRef>
+   <FileRef
+      location = "group:../../iOS-Calculator/HomeViewController.xib">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
